@@ -21,7 +21,7 @@ const Details = () => {
     <>
     
      <div className='w-10/12 m-auto pt-40'>
-        <h1 className='text-6xl text-center font-normal mt-20'>{job && job.job}</h1>
+        <h1 className='text-6xl max-sm:text-4xl text-center font-normal mt-20'>{job && job.job}</h1>
         <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-10 mt-20">
           {
             job && (

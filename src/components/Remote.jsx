@@ -22,9 +22,9 @@ const Remote = () => {
         <img src={img1} className='rounded-tl-full max-sm:rounded-tl-3xl' alt="" />
       </div>
      </div>
-     <h1 className='text-6xl text-center font-normal my-40'>OFFERED DEPARTMENTS</h1>
+     <h1 className='text-6xl max-sm:text-4xl  text-center font-normal my-40'>OFFERED DEPARTMENTS</h1>
      <RemoCards/>
-     <h1 className='text-6xl text-center font-normal my-40'>CURRENT EMPLOYEES</h1>
+     <h1 className='text-6xl max-sm:text-3xl  text-center font-normal my-40'>CURRENT EMPLOYEES</h1>
      <Carousel/>
      </div>
      <div className='my-40 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
