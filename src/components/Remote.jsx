@@ -8,7 +8,7 @@ import Carousel from './Carousel'
 const Remote = () => {
   return (
     <>
-     <div className='w-10/12 m-auto'>
+     <div className='w-10/12 m-auto max-sm:w-full max-sm:p-5'>
      <div className='pb-5 gap-7 grid grid-cols-2 max-sm:grid-cols-1 pt-56 max-sm:pt-28'>
       <div className='max-sm:text-center'>
       <h5 className='text-purple-600 font-bold'>Over 50+ employees working </h5>

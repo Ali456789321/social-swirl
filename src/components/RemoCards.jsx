@@ -15,7 +15,7 @@ const RemoCards = () => {
                 {
                     jobs.map(item => (
                         <>
-                            <div key={item.id} className="p-2 w-96 max-sm:w-11/12 max-sm:m-auto border rounded-lg shadow-black bg-white">
+                            <div key={item.id} className="p-2 w-96 max-sm:w-full max-sm:m-auto border rounded-lg shadow-black bg-white">
                                 <div className='flex flex-col'>
                                     <img className="w-full h-56 max-sm:h-60 shadow-lg rounded-xl" src={item.img} alt="Bonnie image" />
                                     <h5 className="mt-2 mb-1 text-xl font-medium max-sm:ms-2">{item.job}</h5>
