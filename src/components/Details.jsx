@@ -22,7 +22,7 @@ const Details = () => {
     
      <div className='w-10/12 m-auto pt-40'>
         <h1 className='text-6xl text-center font-normal mt-20'>{job && job.job}</h1>
-        <div className="grid grid-cols-2 gap-10 mt-20">
+        <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-10 mt-20">
           {
             job && (
               <>
@@ -60,8 +60,8 @@ const Details = () => {
 
         </div>
          <div>
-            <img className='h-80 w-10/12 m-auto rounded-3xl mt-10' src={job.img} alt="" />
-            <div className='rounded-3xl bg-white p-3 text-center w-10/12 m-auto mt-5'>
+            <img className='h-80 w-10/12 max-sm:w-full m-auto rounded-3xl mt-10' src={job.img} alt="" />
+            <div className='rounded-3xl max-sm:bg-transparent bg-white p-3 text-center w-10/12 m-auto mt-5'>
                 <button className='py-5 px-8 rounded-xl text-white bg-gradient-to-r from-social_left to-social_right'>Apply Now</button>
             </div>
          </div>
