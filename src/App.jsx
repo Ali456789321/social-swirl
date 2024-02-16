@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './index.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Elearning from './components/Elearning'
@@ -21,7 +21,7 @@ function App() {
   return (
     <>
     <div className='body'>
-    <BrowserRouter>
+    <HashRouter>
          <Nav/>
          <Routes>
            <Route path='/' element={<Home/>}/>
@@ -35,7 +35,7 @@ function App() {
            <Route path='/remote/:id' element={<Details/>}/>
          </Routes>
          <Footer/>
-      </BrowserRouter>
+      </HashRouter>
     </div>
     </>
   )
