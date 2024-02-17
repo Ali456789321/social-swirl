@@ -1,4 +1,4 @@
-import img1 from "../images/pexels-hasibullah-zhowandai-819530.jpg"
+import img1 from "../images/person.jpg"
 
 const caro = [
     {

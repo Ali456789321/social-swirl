@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img2 from "../images/pexels-hasibullah-zhowandai-819530.jpg"
-import img3 from "../images/pexels-fox-1595391.jpg"
+import img2 from "../images/person.jpg"
+import img3 from "../images/pexels-fauxels-3183150.jpg"
 import { MdOutlineArrowOutward } from "react-icons/md";
 import card from '../data/card';
 import { Link } from 'react-router-dom';
@@ -39,7 +39,7 @@ const Elearning = () => {
         card.map((item) => (
           <Link to={`/selectedCourse/${item.id}`}>
              <div key={item.id} class="bg-white max-w-sm rounded overflow-hidden shadow-lg max-sm:m-auto">
-          <img className="w-full" src={item.img} alt="Sunset in the mountains"/>
+          <img className="w-full h-60" src={item.img} alt="Sunset in the mountains"/>
            <div className='flex pt-8 ps-3'>
                <img src={img2} className='w-11 h-11  rounded-full' alt="" />
                <div className='ps-3'>

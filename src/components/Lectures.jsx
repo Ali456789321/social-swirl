@@ -1,5 +1,5 @@
 import React from 'react'
-import img2 from "../images/pexels-hasibullah-zhowandai-819530.jpg"
+// import img2 from "../images/pexels-hasibullah-zhowandai-819530.jpg"
 import lecture from '../data/lecture'
 
 const Lectures = () => {

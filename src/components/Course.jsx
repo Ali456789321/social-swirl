@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import card from '../data/card'
 import { useNavigate, useParams } from 'react-router-dom'
-import img2 from "../images/pexels-hasibullah-zhowandai-819530.jpg"
+import img2 from "../images/person.jpg"
 import { IoStarSharp } from "react-icons/io5";
 import { GoDotFill } from "react-icons/go";
 
