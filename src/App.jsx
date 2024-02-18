@@ -1,17 +1,21 @@
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import './index.css'
-import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
-import Home from './components/Home'
-import Elearning from './components/Elearning'
-import Course from './components/Course'
 import Footer from './components/Footer'
-import Lectures from './components/Lectures'
-import Buisness from './components/Buisness'
-import About from './components/About'
-import Remote from './components/Remote'
-import Details from './components/Details'
-import Apply from './components/Apply'
+
+
+const Home = lazy(() => import('./components/Home'))
+const Elearning = lazy(() => import('./components/Elearning'))
+const Course = lazy(() => import('./components/Course'))
+const Lectures = lazy(() => import('./components/Lectures'))
+const Buisness = lazy(() => import('./components/Buisness'))
+const About = lazy(() => import('./components/About'))
+const Remote = lazy(() => import('./components/Remote'))
+const Details = lazy(() => import('./components/Details'))
+const Apply = lazy(() => import('./components/Apply'))
+
+
 
 
 
@@ -24,15 +28,51 @@ function App() {
     <HashRouter>
          <Nav/>
          <Routes>
-           <Route path='/' element={<Home/>}/>
-           <Route path='/e-learning' element={<Elearning/>}/>
-           <Route path='/selectedCourse/:id' element={<Course/>}/>
-           <Route path='/lectures' element={<Lectures/>}/>
-           <Route path='/buisness' element={<Buisness/>}/>
-           <Route path='/about' element={<About/>}/>
-           <Route path='/apply' element={<Apply/>}/>
-           <Route path='/remote' element={<Remote/>}/>
-           <Route path='/remote/:id' element={<Details/>}/>
+           <Route path='/' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Home/>
+            </Suspense>
+           }/>
+           <Route path='/e-learning' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Elearning/>
+            </Suspense>
+           }/>
+           <Route path='/selectedCourse/:id' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Course/>
+            </Suspense>
+           }/>
+           <Route path='/lectures' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Lectures/>
+            </Suspense>
+           }/>
+           <Route path='/buisness' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Buisness/>
+            </Suspense>
+           }/>
+           <Route path='/about' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <About/>
+            </Suspense>
+           }/>
+           <Route path='/apply' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Apply/>
+            </Suspense>
+           }/>
+           <Route path='/remote' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Remote/>
+            </Suspense>
+           }/>
+           <Route path='/remote/:id' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Details/>
+            </Suspense>
+           }/>
          </Routes>
          <Footer/>
       </HashRouter>

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import img1 from "../images/remote.jpg"
-import RemoCards from './RemoCards'
+// import RemoCards from './RemoCards'
 import Carousel from './Carousel'
 
+const RemoCards = lazy(() => import('./RemoCards'))
 
 
 const Remote = () => {
@@ -23,7 +24,9 @@ const Remote = () => {
       </div>
      </div>
      <h1 className='text-6xl max-sm:text-4xl  text-center font-normal my-40'>OFFERED DEPARTMENTS</h1>
-     <RemoCards/>
+    <Suspense fallback={'<h1>loading</h1>'}>
+    <RemoCards/>
+    </Suspense>
      <h1 className='text-6xl max-sm:text-3xl  text-center font-normal my-40'>CURRENT EMPLOYEES</h1>
      <Carousel/>
      </div>
