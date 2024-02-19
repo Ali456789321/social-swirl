@@ -91,16 +91,16 @@ const Nav = () => {
       <NavLink to='/' className='res'>
       <h5 className='ms-4 ps-3 rounded-md py-2 mt-4 me-5'>HOME</h5>
       </NavLink>
-      <NavLink to='remote'>
+      <NavLink to='remote' className='res'>
       <h5 className='ms-4 ps-3 rounded-md py-2 mt-4 me-5'>REMOTE JOBS</h5>
       </NavLink>
-      <NavLink to='buisness'>
+      <NavLink to='buisness' className='res'>
       <h5 className='ms-4 ps-3 rounded-md py-2 mt-4 me-5'>BUISNESS OUTSOURCING</h5>
       </NavLink>
       <NavLink to="e-learning" className='res'>
       <h5 className='ms-4 ps-3 rounded-md py-2 mt-4 me-5'>E-LEARNING</h5>
       </NavLink>
-      <NavLink to='about'>
+      <NavLink to='about' className='res'>
       <h5 className='ms-4 ps-3 rounded-md py-2 mt-4 me-5'>ABOUT US</h5>
       </NavLink>
       <NavLink>
