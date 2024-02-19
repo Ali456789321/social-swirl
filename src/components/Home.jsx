@@ -5,6 +5,7 @@ import img3 from "../images/events.jpg"
 import { useNavigate } from 'react-router-dom'
 import Carousel from './Carousel'
 import Reviews from './Reviews'
+import Clients from './Clients'
 
 const Home = () => {
 
@@ -48,6 +49,9 @@ const Home = () => {
      <Carousel/>
      <h1 className='text-5xl text-center my-40 max-sm:my-20 mb-20 max-sm:text-3xl font-semibold'>What Companies Say About Us</h1>
      <Reviews/>
+     <h1 className='text-5xl text-center my-40 max-sm:my-20 mb-20 max-sm:text-3xl font-semibold'>Our Clients</h1>
+     <Clients/>
+  
   
   <div className='bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
     <div className='text-white max-sm:text-center'>

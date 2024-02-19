@@ -1,6 +1,6 @@
 import React from 'react'
 import img2 from "../images/pexels-fauxels-3183150.jpg"
-import img3 from "../images/events.jpg"
+import img3 from "../images/sa.png"
 
 const About = () => {
   return (
