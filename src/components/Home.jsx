@@ -5,7 +5,8 @@ import img3 from "../images/events.jpg"
 import { useNavigate } from 'react-router-dom'
 import Carousel from './Carousel'
 import Reviews from './Reviews'
-import Clients from './Clients'
+import Opening from './Opening'
+import Infinite from './Infinite'
 
 const Home = () => {
 
@@ -25,7 +26,6 @@ const Home = () => {
         <img src={img1} className='w-full m-auto relative bottom-40 max-sm:bottom-14' alt="" />
       </div>
 
-      {/* 2nd Column */} 
       <div className='gap-10 flex max-sm:flex-col-reverse justify-between w-10/12 max-sm:w-full m-auto border'>
          <img src={img2} className='w-6/12 h-96 max-sm:w-full' alt="" />
          <div className='max-sm:text-center w-6/12 max-sm:w-full'>
@@ -45,15 +45,16 @@ const Home = () => {
          <img src={img3} className='w-6/12 h-96 max-sm:w-full' alt="" />
       </div>
      
+     <Opening/>
      <h1 className='text-5xl text-center my-40 max-sm:my-20 max-sm:text-3xl font-semibold'>Curent Employees</h1>
      <Carousel/>
      <h1 className='text-5xl text-center my-40 max-sm:my-20 mb-20 max-sm:text-3xl font-semibold'>What Companies Say About Us</h1>
      <Reviews/>
-     <h1 className='text-5xl text-center my-40 max-sm:my-20 mb-20 max-sm:text-3xl font-semibold'>Our Clients</h1>
-     <Clients/>
+     <h1 className='text-5xl text-center mt-40 max-sm:my-20 max-sm:text-3xl font-semibold'>Our Clients</h1>
+    <Infinite/>
   
   
-  <div className='bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
+  <div className='mt-40 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
     <div className='text-white max-sm:text-center'>
     <h1 className='text-3xl'>
       Start a Project with us Today

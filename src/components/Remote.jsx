@@ -30,7 +30,7 @@ const Remote = () => {
      <h1 className='text-6xl max-sm:text-3xl  text-center font-normal my-40'>CURRENT EMPLOYEES</h1>
      <Carousel/>
      </div>
-     <div className='my-40 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
+     <div className='mt-40 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
     <div className='text-white max-sm:text-center'>
     <h1 className='text-3xl'>
       Start a Project with us Today

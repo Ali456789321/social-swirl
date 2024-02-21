@@ -41,6 +41,15 @@ a:hover ~ .hover-line {
   color: white;
 }
 
+.certificate {
+  box-shadow: 2px 2px 40px 0px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s;
+}
+
+.certificate:hover {
+  transform: translateY(-10px);
+}
+
 
 
 

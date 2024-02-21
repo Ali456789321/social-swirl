@@ -13,6 +13,15 @@ export default {
         social_right: "rgba(64, 113, 247,0.9)",
         white_shade: "rgba(255, 255, 255,0.5)"
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      },
       width: {
         course_img:"200vh"
       },

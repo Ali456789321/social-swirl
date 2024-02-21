@@ -1,10 +1,12 @@
 import React from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import img2 from "../images/person.jpg"
-import img3 from "../images/pexels-fauxels-3183150.jpg"
+import img3 from "../images/events.jpg"
 import { MdOutlineArrowOutward } from "react-icons/md";
 import card from '../data/card';
 import { Link } from 'react-router-dom';
+import Student from './Students';
+import Benefits from './Benefits';
 
 
 const Elearning = () => {
@@ -28,11 +30,13 @@ const Elearning = () => {
         <img src={img3} className='rounded-tl-full max-sm:rounded-tl-3xl' alt="" />
       </div>
      </div>
+     
+    
 
       {/* Courses */}
       <div className='mt-32'>  
-      <h1 className='max-sm:text-center text-4xl font-bold'>Our Courses</h1>
-      <h1 className='max-sm:text-center mt-3'>All courses are made by Experienced Experts</h1>
+      <h1 className='text-lg text-center mt-40  text-social_right'>learn</h1>
+      <h1 className='text-5xl text-center max-sm:mt-20 max-sm:mb-20 ma max-sm:text-3xl font-semibold'>Our Featured Courses</h1>
       <div className='grid grid-cols-3 max-sm:grid-cols-1 mt-10 gap-14'>
        
       {
@@ -61,7 +65,11 @@ const Elearning = () => {
         ))
       }
       </div>
-      <h1 className='text-4xl font-bold text-center mt-20'>Meet Our Team</h1>
+         
+       <Student/>
+       <Benefits/>
+
+      <h1 className='text-4xl font-bold text-center mt-40'>Meet Our Team</h1>
       <div className='max-sm:w-10/12 max-sm:mx-auto text-center'>
       <h4 className='mt-2'>Meet the brilliance behind the Social Swirl - a team of passion and innovation</h4>
       </div>
@@ -94,6 +102,17 @@ const Elearning = () => {
       </div>
       </div>
     </div>
+
+    <div className='mt-40 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
+    <div className='text-white max-sm:text-center'>
+    <h1 className='text-3xl'>
+      Start a Project with us Today
+    </h1>
+    <h2 className='text-lg'>Call us now to schedule as online appointment and get your project successfully completed</h2>
+    </div>
+    <button className='bg-gradient-to-r from-social_left to-social_right text-white py-3 px-7 rounded-lg'>Get Started</button>
+  </div>
+
     </>
   )
 }
