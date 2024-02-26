@@ -7,7 +7,7 @@ const Benefits = () => {
   return (
    <div>
     <h1 className='mt-60 text-lg text-center text-social_right'>KEY BENEFITS</h1>
-    <h2 className='leading-normal text-4xl text-center max-sm:mt-20 max-sm:mb-20 ma max-sm:text-3xl font-semibold w-9/12 m-auto'>Learning reimagined: engaging stories, actionable modules, and flexible courses.</h2>
+    <h2 className='leading-normal text-4xl text-center max-sm:mt-3 max-sm:mb-10 ma max-sm:text-3xl font-semibold w-9/12 max-sm:w-full m-auto'>Learning reimagined: engaging stories, actionable modules, and flexible courses.</h2>
     <div className='grid grid-cols-3 max-sm:grid-cols-1'>
        <div>
         <img src={gif1} alt="" />

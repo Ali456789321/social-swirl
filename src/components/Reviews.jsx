@@ -52,7 +52,7 @@ const Reviews = () => {
                 </Swiper>
             </div>
 
-            <div className='my-10 hidden max-sm:block'>
+            <div className='mt-0 hidden max-sm:block'>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}

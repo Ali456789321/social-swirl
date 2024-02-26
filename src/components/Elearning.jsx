@@ -35,8 +35,8 @@ const Elearning = () => {
 
       {/* Courses */}
       <div className='mt-32'>  
-      <h1 className='text-lg text-center mt-40  text-social_right'>learn</h1>
-      <h1 className='text-5xl text-center max-sm:mt-20 max-sm:mb-20 ma max-sm:text-3xl font-semibold'>Our Featured Courses</h1>
+      <h1 className='text-lg text-center mt-40 text-social_right'>learn</h1>
+      <h1 className='text-5xl text-center max-sm:mt-0 max-sm:mb-20 ma max-sm:text-3xl font-semibold'>Our Featured Courses</h1>
       <div className='grid grid-cols-3 max-sm:grid-cols-1 mt-10 gap-14'>
        
       {

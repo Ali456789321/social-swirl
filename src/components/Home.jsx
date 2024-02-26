@@ -19,8 +19,8 @@ const Home = () => {
         <h1 className='lg:text-7xl max-[650px]:text-4xl font-bold bg-gradient-to-r from-social_left to-social_right bg-clip-text text-transparent'>SOCIAL SWIRL</h1>  
           <h4 className='pt-4'>Explore the world of web development with Social Swirl. Join our user-friendly courses led by industry experts, offering hands-on experiences and a clear path to mastering coding. Join us to unlock your coding skills and confidently shape your future success</h4>  
           <div className='text-white mt-10 flex max-sm:justify-center gap-5'>
-            <button className='bg-gradient-to-r from-social_left to-social_right pt-3 pb-3 ps-5 pe-5 max-sm:ps-2 max-sm:pe-2 rounded-lg'>Feasible Timing</button>
-            <button className='ms-7 max-sm:ms-0 bg-gradient-to-r from-social_left to-social_right pt-3 pb-3 ps-5 pe-5 max-sm:ps-2 max-sm:pe-2 rounded-lg'>Project Based Learning</button>
+            <button onClick={() => navigate('/remote')} className='bg-gradient-to-r from-social_left to-social_right pt-3 pb-3 ps-5 pe-5 max-sm:ps-2 max-sm:pe-2 rounded-lg'>Feasible Timing</button>
+            <button onClick={() => navigate('/e-learning')} className='ms-7 max-sm:ms-0 bg-gradient-to-r from-social_left to-social_right pt-3 pb-3 ps-5 pe-5 max-sm:ps-2 max-sm:pe-2 rounded-lg'>Project Based Learning</button>
           </div>
         </div>
         <img src={img1} className='w-full m-auto relative bottom-40 max-sm:bottom-14' alt="" />
@@ -48,9 +48,9 @@ const Home = () => {
      <Opening/>
      <h1 className='text-5xl text-center my-40 max-sm:my-20 max-sm:text-3xl font-semibold'>Curent Employees</h1>
      <Carousel/>
-     <h1 className='text-5xl text-center my-40 max-sm:my-20 mb-20 max-sm:text-3xl font-semibold'>What Companies Say About Us</h1>
+     <h1 className='text-5xl text-center my-40 max-sm:mt-56 max-sm:mb-5 mb-20 max-sm:text-3xl font-semibold'>What Companies Say About Us</h1>
      <Reviews/>
-     <h1 className='text-5xl text-center mt-40 max-sm:my-20 max-sm:text-3xl font-semibold'>Our Clients</h1>
+     <h1 className='text-5xl text-center mt-40 max-sm:mt-56 max-sm:mb-5 max-sm:text-3xl font-semibold'>Our Clients</h1>
     <Infinite/>
   
   
