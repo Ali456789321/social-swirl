@@ -2,6 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import img2 from "../images/person.jpg"
 import review from '../data/review';
+import img3 from "../images/sa.png"
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -39,7 +40,7 @@ const Reviews = () => {
                                     <div className='text-center max-sm:w-full px-10 py-3 rounded-xl my-10 m-auto max-sm:mx-2' key={item.id}>
                                         <p className='text-base max-sm:text-xs'>{item.reviews}</p>
                                         <div className='flex items-center flex-col justify-center'>
-                                            <img className='w-10 h-10 rounded-full mt-2' src={img2} alt="" />
+                                            <img className='w-10 h-10 rounded-full mt-2' src={img3} alt="" />
                                             <h5 className='pt-2 text-base ms-2 bg-gradient-to-r from-social_left to-social_right bg-clip-text text-transparent font-semibold'>Bundu Khan</h5>
                                         </div>
                                     </div>
@@ -77,7 +78,7 @@ const Reviews = () => {
                                     <div className='text-center max-sm:w-full px-10 py-3 rounded-xl my-10 m-auto max-sm:mx-2' key={item.id}>
                                         <p className='text-base max-sm:text-xs'>{item.reviews}</p>
                                         <div className='flex items-center flex-col justify-center'>
-                                            <img className='w-10 h-10 rounded-full mt-2' src={img2} alt="" />
+                                            <img className='w-10 h-10 rounded-full mt-2' src={img3} alt="" />
                                             <h5 className='pt-2 text-base ms-2 bg-gradient-to-r from-social_left to-social_right bg-clip-text text-transparent font-semibold'>Bundu Khan</h5>
                                         </div>
                                     </div>
