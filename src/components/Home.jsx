@@ -23,7 +23,7 @@ const Home = () => {
             <button onClick={() => navigate('/e-learning')} className='ms-7 max-sm:ms-0 bg-gradient-to-r from-social_left to-social_right pt-3 pb-3 ps-5 pe-5 max-sm:ps-2 max-sm:pe-2 rounded-lg'>Project Based Learning</button>
           </div>
         </div>
-        <img src={img1} className='w-full m-auto relative bottom-40 max-sm:bottom-14' alt="" />
+        <img src={img1} className='w-full m-auto relative bottom-40 max-sm:bottom-0' alt="" />
       </div>
 
       <div className='gap-10 flex max-sm:flex-col-reverse justify-between w-10/12 max-sm:w-full m-auto border'>
