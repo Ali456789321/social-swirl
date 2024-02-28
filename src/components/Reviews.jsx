@@ -1,15 +1,9 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img2 from "../images/person.jpg"
+import img2 from "../images/sa.png"
 import review from '../data/review';
-import img3 from "../images/sa.png"
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
-
-
-// import required modules
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 const Reviews = () => {
@@ -29,7 +23,7 @@ const Reviews = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    modules={[Autoplay, Navigation, Pagination]}
+                    modules={[Autoplay, Navigation,Pagination]}
                     className="mySwiper"
                 >
 
@@ -38,22 +32,23 @@ const Reviews = () => {
                             <>
                                 <SwiperSlide>
                                     <div className='text-center max-sm:w-full px-10 py-3 rounded-xl my-10 m-auto max-sm:mx-2' key={item.id}>
-                                        <p className='text-base max-sm:text-xs'>{item.reviews}</p>
-                                        <div className='flex items-center flex-col justify-center'>
-                                            <img className='w-10 h-10 rounded-full mt-2' src={img3} alt="" />
-                                            <h5 className='pt-2 text-base ms-2 bg-gradient-to-r from-social_left to-social_right bg-clip-text text-transparent font-semibold'>Bundu Khan</h5>
-                                        </div>
+                                      <img className='rounded-full m-auto w-14 h-14 mb-3' src={item.img} alt="" />
+                                      <p className='text-base max-sm:text-xs'>{item.reviews}</p>
+                                      <div className='flex items-center flex-col justify-center'>
+                                      <img className='w-10 h-10 rounded-full mt-2' src={img2} alt="" />
+                                      <h5 className='pt-2 text-base ms-2 bg-gradient-to-r from-social_left to-social_right bg-clip-text text-transparent font-semibold'>Bundu Khan</h5>
+                                      </div>
                                     </div>
                                 </SwiperSlide>
 
                             </>
-                            //  bg-gradient-to-r from-social_left to-social_right text
+                           
                         ))
                     }
                 </Swiper>
             </div>
 
-            <div className='mt-0 hidden max-sm:block'>
+            <div className='my-0 hidden max-sm:block'>
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={30}
@@ -67,7 +62,7 @@ const Reviews = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    modules={[Autoplay, Navigation, Pagination]}
+                    modules={[Autoplay, Navigation,Pagination]}
                     className="mySwiper"
                 >
 
@@ -76,21 +71,20 @@ const Reviews = () => {
                             <>
                                 <SwiperSlide>
                                     <div className='text-center max-sm:w-full px-10 py-3 rounded-xl my-10 m-auto max-sm:mx-2' key={item.id}>
-                                        <p className='text-base max-sm:text-xs'>{item.reviews}</p>
-                                        <div className='flex items-center flex-col justify-center'>
-                                            <img className='w-10 h-10 rounded-full mt-2' src={img3} alt="" />
-                                            <h5 className='pt-2 text-base ms-2 bg-gradient-to-r from-social_left to-social_right bg-clip-text text-transparent font-semibold'>Bundu Khan</h5>
-                                        </div>
+                                      <p className='text-base max-sm:text-xs'>{item.reviews}</p>
+                                      <div className='flex items-center flex-col justify-center'>
+                                      <img className='w-10 h-10 rounded-full mt-2' src={img2} alt="" />
+                                      <h5 className='pt-2 text-base ms-2 bg-gradient-to-r from-social_left to-social_right bg-clip-text text-transparent font-semibold'>Bundu Khan</h5>
+                                      </div>
                                     </div>
                                 </SwiperSlide>
 
                             </>
-                            //  bg-gradient-to-r from-social_left to-social_right text
+
                         ))
                     }
                 </Swiper>
             </div>
-
         </div>
     )
 }

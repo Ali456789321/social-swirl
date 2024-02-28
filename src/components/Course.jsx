@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import card from '../data/card'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import img2 from "../images/person.jpg"
 import { IoStarSharp } from "react-icons/io5";
 import { GoDotFill } from "react-icons/go";
@@ -78,6 +78,42 @@ const Course = () => {
                 <GoDotFill />
                 <h4 className='ps-4'>1 laptop or PC with general specifications</h4>
               </div>
+
+              <h3 className='text-4xl font-bold mt-5 max-sm:text-center'>#Course Outline</h3>
+              <div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'>Server-side vs. Client-side Overview of Backend Languages</h4>
+              </div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'>PHP, Python, Ruby, Node.js Choosing the Right Language for the Project</h4>
+              </div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'>Relational vs. NoSQL Popular Database Management Systems</h4>
+              </div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'>Queries, Inserts, Updates, Deletes Database Design Principles</h4>
+              </div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'>Principles and Concepts API Endpoints and Methods</h4>
+              </div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'>Password Hashing, JWT OAuth and OpenID Connect</h4>
+              </div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'>Unit Testing, Integration Testing Test-Driven Development (TDD)</h4>
+              </div>
+              <div className='flex items-center mt-2'>
+                <GoDotFill />
+                <h4 className='ps-4'> Load Balancing, Caching Database Optimization</h4>
+              </div>
+              </div>
             </div>
 
             <div>
@@ -89,18 +125,30 @@ const Course = () => {
                   <span className=" mt-3 inline-block rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-purple-600 bg-purple-300">#{course.course}</span>
                   <span className="mt-3 inline-block rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 text-purple-600 bg-purple-300">certificate</span>
                   <div>
-                    <button onClick={() => navigate('/lectures')} className='bg-gradient-to-r from-social_right to-social_left px-4 py-3 text-white font-bold rounded-lg mt-4'>Start Classes</button>
+                    <Link to={`/register/${course.title}`}>
+                    <button className='bg-gradient-to-r from-social_right to-social_left px-4 py-3 text-white font-bold rounded-lg mt-4'>Register Now</button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <h2 className='text-4xl font-bold mt-10 max-sm:text-center'>Course Overview</h2>
+          <h2 className='text-4xl font-bold mt-32 max-sm:text-center'>Course Overview</h2>
           <h4 className='mt-3 max-sm:mx-2 max-sm:text-center'>Immense yourself in the vibrant world of visual storytelling and creativity. This course is a deep dive into graphic design, where you'll become proficent in industry-standard tools like Adobe, Photoshop and Illustrator. From understanding design principles to creating visually stunning graphics, this journey will not only enhance your creative flair but also provide you with the skills to curate an impressive portfolio showcasing your designs</h4>
         </div>
+        
       ) : (
         <p>No course found with the given ID</p>
       )}
+        <div className='mt-40 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
+    <div className='text-white max-sm:text-center'>
+    <h1 className='text-3xl'>
+      Start a Project with us Today
+    </h1>
+    <h2 className='text-lg'>Call us now to schedule as online appointment and get your project successfully completed</h2>
+    </div>
+    <button className='bg-gradient-to-r from-social_left to-social_right text-white py-3 px-7 rounded-lg'>Get Started</button>
+  </div>
     </>
   )
 }

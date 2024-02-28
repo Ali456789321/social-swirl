@@ -1,15 +1,15 @@
-import React, { Suspense, lazy } from 'react'
+import React, { lazy } from 'react'
 import img1 from "../images/remote.jpg"
-// import RemoCards from './RemoCards'
 import Carousel from './Carousel'
 
 const RemoCards = lazy(() => import('./RemoCards'))
 
 
+
 const Remote = () => {
   return (
     <>
-     <div className='w-10/12 m-auto max-sm:w-full max-sm:p-5'>
+     <div className='w-10/12 max-sm:w-full max-sm:p-5 m-auto'>
      <div className='pb-5 gap-7 grid grid-cols-2 max-sm:grid-cols-1 pt-56 max-sm:pt-28'>
       <div className='max-sm:text-center'>
       <h5 className='text-purple-600 font-bold'>Over 50+ employees working </h5>
@@ -23,14 +23,13 @@ const Remote = () => {
         <img src={img1} className='rounded-tl-full max-sm:rounded-tl-3xl' alt="" />
       </div>
      </div>
-     <h1 className='text-6xl max-sm:text-4xl  text-center font-normal my-40'>OFFERED DEPARTMENTS</h1>
-    <Suspense fallback={'<h1>loading</h1>'}>
-    <RemoCards/>
-    </Suspense>
-     <h1 className='text-6xl max-sm:text-3xl  text-center font-normal my-40'>CURRENT EMPLOYEES</h1>
-     <Carousel/>
+     <h1 className='text-5xl max-sm:text-3xl text-center font-mwdium mt-40 mb-10'>OFFERED DEPARTMENTS</h1>
+     <RemoCards/>
      </div>
-     <div className='mt-40 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20'>
+     
+     <h1 className='text-5xl max-sm:text-3xl text-center font-medium mt-56 mb-24'>CURRENT EMPLOYEES</h1>
+     <Carousel/>
+     <div className='mt-56 bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-40'>
     <div className='text-white max-sm:text-center'>
     <h1 className='text-3xl'>
       Start a Project with us Today

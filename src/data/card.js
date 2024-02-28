@@ -13,6 +13,7 @@ const card  = [
         senior: 'Senior Frontend Developer',
         course : "Frontend Development",
         img: frontend,
+        title:"FrontEnd-Development",
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
     {
@@ -21,6 +22,7 @@ const card  = [
         senior: 'Senior Backend Developer',
         course : "Backend Development",
         img: backend,
+        title:"BackEnd-Development",
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
     {
@@ -28,7 +30,8 @@ const card  = [
         name: 'Mam Sara',
         senior: graphic,
         course : "Graphic Designing",
-        img: "https://i.pinimg.com/736x/7f/32/0a/7f320aad80ace1060a8f59165449c438.jpg",
+        img: graphic,
+        title:"Graphic-Designing",
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life",
     },
     {
@@ -37,6 +40,7 @@ const card  = [
         senior: 'Senior SEO Expert',
         course : "SEO",
         img: seo,
+        title:"SEO",
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
     {
@@ -45,6 +49,7 @@ const card  = [
         senior: 'Senior Social Media Marketer',
         course : "Social Media Marketing",
         img: social,
+        title:"Social-Media",
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
     {
@@ -53,6 +58,7 @@ const card  = [
         senior: 'Senior Human Resourcer',
         course : "Human Resource",
         img: human,
+        title:"HR",
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
 ]

@@ -1,6 +1,7 @@
 import React from 'react'
 import img2 from "../images/pexels-fauxels-3183150.jpg"
 import img3 from "../images/sa.png"
+import Carousel from './Carousel'
 
 const About = () => {
   return (
@@ -31,7 +32,10 @@ const About = () => {
  </div>
     </div>
 
-    <div className='bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 mt-32'>
+    <h1 className='text-5xl max-sm:text-3xl text-center font-medium mt-56 mb-24'>CURRENT EMPLOYEES</h1>
+     <Carousel/>
+
+    <div className='bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 mt-72'>
     <div className='text-white max-sm:text-center'>
     <h1 className='text-3xl'>
       Start a Project with us Today

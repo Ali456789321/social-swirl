@@ -2,7 +2,7 @@ import React from 'react'
 // import review from "../images/review.jpg"
 import vector from "../images/vector.jpg"
 import student from '../data/students'
-import students2 from '../data/students2'
+import student2 from '../data/students2'
 
 const Student = () => {
   return (
@@ -18,7 +18,7 @@ const Student = () => {
             student.map(item => (
               <div className='bg-white py-5 px-5 rounded-2xl max-sm:m-auto max-sm:w-10/12' key={item.id}>
               <div className='flex gap-5'>
-                <img className='w-11 h-11 rounded-full' src={vector} alt="" />
+                <img className='w-11 h-11 rounded-full' src={item.img} alt="" />
                 <div>
                 <h1 className='font-medium'>{item.name}</h1>
                 <h2 className='text-social_right font-medium'>Student</h2>
@@ -48,10 +48,10 @@ const Student = () => {
         </div>
         <div className='grid grid-cols-3 max-sm:grid-cols-1 gap-10'>
         {
-            students2.map(item => (
+            student2.map(item => (
               <div className='bg-black py-5 px-5 rounded-2xl max-sm:w-10/12 max-sm:m-auto' key={item.id}>
               <div className='flex gap-5'>
-                <img className='text-white w-11 h-11 rounded-full' src={vector} alt="" />
+                <img className='text-white w-11 h-11 rounded-full' src={item.img} alt="" />
                 <div>
                 <h1 className='text-white font-medium'>{item.name}</h1>
                 <h2 className='text-social_right font-medium'>Student</h2>

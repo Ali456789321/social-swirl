@@ -3,6 +3,7 @@ import './index.css'
 import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import Register from './components/Register'
 
 
 const Home = lazy(() => import('./components/Home'))
@@ -71,6 +72,11 @@ function App() {
            <Route path='/remote/:id' element={
             <Suspense fallback={'<h1>loading</h1>'}>
                  <Details/>
+            </Suspense>
+           }/>
+           <Route path='/register/:course' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Register/>
             </Suspense>
            }/>
          </Routes>

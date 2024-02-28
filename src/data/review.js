@@ -1,27 +1,39 @@
+import img1 from '../images/logos/elsiha.jpg'
+import img2 from '../images/logos/careem.jpg'
+import img3 from '../images/logos/k.jpg'
+import img4 from '../images/logos/logo.jpg'
+import img5 from '../images/logos/m.jpg'
+
 const review = [
     {
         id:1,
-        reviews: "Working with Social Swirl was a great experience. Their front-end development team is highly skilled and delivered exceptional results. They transformed our design concepts into beautifully crafted and responsive websites." 
+        reviews: "Social Swirl transformed our design concepts into beautifully crafted, responsive websites with exceptional skill. Great experience.",
+        img:img1 
     },
     {
         id:2,
-        reviews: "Social Swirl's back-end team excels, creating a robust infrastructure with expertise in Python and Django. Their commitment to quality and timely delivery makes them a reliable choice for any back-end development needs." 
+        reviews: "Social Swirl's back-end team excels in Python and Django, delivering robust infrastructure with quality and timeliness. A reliable choice!",
+        img:img2 
     },
     {
         id:3,
-        reviews: "Social Swirl's graphic design team exceeded expectations, bringing our brand to life with innovative and impactful designs. From logos to marketing collateral, they perfectly captured our values and audience. Thrilled with their work!" 
+        reviews: "Social Swirl's graphic design team exceeded expectations, bringing our brand to life with innovative designs. Thrilled with their work!",
+        img: img3 
     },
     {
         id:4,
-        reviews: "Social Swirl's top-tier SEO services elevated our online presence. With precise keyword strategies, they boosted website visibility and organic traffic. Their expertise is evident in detailed analytics and progress reports. Highly satisfied with their outstanding services!"
+        reviews: "Social Swirl's top-tier SEO services boosted our online presence with precise keywords and detailed analytics. Highly satisfied!",
+        img: img4
     },
     {
         id:5,
-        reviews: "Social Swirl's social media team built a strong online presence with strategic approaches and engaging content. Efficient account management, follower interaction, and successful ad campaigns have significantly boosted our brand awareness and conversions. Impressed with their impactful efforts!"
+        reviews: "Social Swirl's social media team's strategic content and efficient management led to a strong online presence, boosting brand awareness and conversions. Impressive efforts!",
+        img: img5
     },
     {
         id:6,
-        reviews: "Working with Social Swirl was a great experience. Their front-end development team is highly skilled and delivered exceptional results. They transformed our design concepts into beautifully crafted and responsive websites." 
+        reviews: "Social Swirl's front-end team delivered exceptional results, transforming our design concepts into beautifully crafted, responsive websites. Great experience!",
+        img: img1 
     }
 ]
 

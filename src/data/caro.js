@@ -5,43 +5,43 @@ const caro = [
       id:1,
       img:img1,
       name:"Waleed Ahmed",
-      position:"HR Intern"
+      position:"Senior HR"
     },
     {
         id:1,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Senior FrontEnd Developer"
       },
       {
         id:2,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Senior Backend Developer"
       },
       {
         id:3,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Senior Graphic Designer"
       },
       {
         id:4,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Social Media Marketer"
       },
       {
         id:5,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Senior SEO"
       },
       {
         id:6,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"FrontEnd Intern"
       },
       {
         id:7,
@@ -71,25 +71,25 @@ const caro = [
         id:11,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Backend Intern"
       },
       {
         id:12,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"SEO Intern"
       },
       {
         id:13,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Social Media Intern"
       },
       {
         id:14,
         img:img1,
         name:"Waleed Ahmed",
-        position:"HR Intern"
+        position:"Graphic Designer Intern"
       },
       {
         id:15,
