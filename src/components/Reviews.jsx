@@ -71,6 +71,7 @@ const Reviews = () => {
                             <>
                                 <SwiperSlide>
                                     <div className='text-center max-sm:w-full px-10 py-3 rounded-xl my-10 m-auto max-sm:mx-2' key={item.id}>
+                                    <img className='rounded-full m-auto w-14 h-14 mb-3' src={item.img} alt="" />
                                       <p className='text-base max-sm:text-xs'>{item.reviews}</p>
                                       <div className='flex items-center flex-col justify-center'>
                                       <img className='w-10 h-10 rounded-full mt-2' src={img2} alt="" />

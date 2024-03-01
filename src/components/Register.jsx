@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { MdOutlinePayments } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { TiTick } from "react-icons/ti";
+import card from '../data/card';
+
 
 
 
 const Register = () => {
     const { course } = useParams()
-    console.log(course);
+    const [outline, setOutline] = useState([])
+ 
+    useEffect(() => {
+     const gr = card.filter((item) => item.title === course)
+     setOutline(gr[0])
+    }, [])
+
+    console.log(outline);
 
     return (
         <>
@@ -90,6 +100,20 @@ const Register = () => {
                    </div>  
                 </div>
                 </div>     
+            </div>
+
+            <div>
+              <h1 className='text-center text-4xl font-bold mt-40'>{course} Course Outline</h1>
+              <div className='grid grid-cols-2 gap-x-96'>
+                {
+                 outline && outline.outlines && outline.outlines.map((ele) => (
+                    <div className='flex items-center mt-10'>
+                    <TiTick className='text-social_right' size={'30px'}/>
+                    <h2 className='text-2xl font-medium ps-2'>{ele}</h2>
+                  </div>
+                  ))
+                }
+              </div>
             </div>
         </div>
 

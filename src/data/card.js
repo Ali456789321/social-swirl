@@ -14,7 +14,15 @@ const card  = [
         course : "Frontend Development",
         img: frontend,
         title:"FrontEnd-Development",
+        outlines: [
+            "Basics of HTML, CSS, and JavaScript",
+            "Forms and input validation",
+            "CSS3 properties and selectors",
+            "DOM manipulation and events",
+            "Error handling and debugging"
+        ],
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
+
     },
     {
         id:2,
@@ -23,6 +31,13 @@ const card  = [
         course : "Backend Development",
         img: backend,
         title:"BackEnd-Development",
+        outlines: [
+            "Basics of HTML, CSS, and JavaScript",
+            "Forms and input validation",
+            "CSS3 properties and selectors",
+            "DOM manipulation and events",
+            "Error handling and debugging"
+        ],
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
     {
@@ -32,6 +47,13 @@ const card  = [
         course : "Graphic Designing",
         img: graphic,
         title:"Graphic-Designing",
+        outlines: [
+            "Basics of HTML, CSS, and JavaScript",
+            "Forms and input validation",
+            "CSS3 properties and selectors",
+            "DOM manipulation and events",
+            "Error handling and debugging"
+        ],
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life",
     },
     {
@@ -41,6 +63,13 @@ const card  = [
         course : "SEO",
         img: seo,
         title:"SEO",
+        outlines: [
+            "Basics of HTML, CSS, and JavaScript",
+            "Forms and input validation",
+            "CSS3 properties and selectors",
+            "DOM manipulation and events",
+            "Error handling and debugging"
+        ],
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
     {
@@ -50,6 +79,13 @@ const card  = [
         course : "Social Media Marketing",
         img: social,
         title:"Social-Media",
+        outlines: [
+            "Basics of HTML, CSS, and JavaScript",
+            "Forms and input validation",
+            "CSS3 properties and selectors",
+            "DOM manipulation and events",
+            "Error handling and debugging"
+        ],
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
     {
@@ -59,6 +95,13 @@ const card  = [
         course : "Human Resource",
         img: human,
         title:"HR",
+        outlines: [
+            "Basics of HTML, CSS, and JavaScript",
+            "Forms and input validation",
+            "CSS3 properties and selectors",
+            "DOM manipulation and events",
+            "Error handling and debugging"
+        ],
         desc:"Transform your creativity into visual masterpieces. Delve into graphic design principles, color theory, and industry-standard tools. From logos to illustrations develop the skills to bring ideas to life"
     },
 ]
