@@ -104,7 +104,7 @@ const Register = () => {
 
             <div>
               <h1 className='text-center text-4xl font-bold mt-40'>{course} Course Outline</h1>
-              <div className='grid grid-cols-2 gap-x-96'>
+              <div className='grid grid-cols-2 max-sm:grid-cols-1 gap-x-96'>
                 {
                  outline && outline.outlines && outline.outlines.map((ele) => (
                     <div className='flex items-center mt-10'>

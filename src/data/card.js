@@ -43,7 +43,7 @@ const card  = [
     {
         id:3,
         name: 'Mam Sara',
-        senior: graphic,
+        senior: "Senior Graphic Designer",
         course : "Graphic Designing",
         img: graphic,
         title:"Graphic-Designing",
