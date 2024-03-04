@@ -4,12 +4,27 @@ import img2 from "../images/person.jpg"
 import img3 from "../images/events.jpg"
 import { MdOutlineArrowOutward } from "react-icons/md";
 import card from '../data/card';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Student from './Students';
 import Benefits from './Benefits';
 
 
 const Elearning = () => {
+
+  const navigate = useNavigate()
+  
+  const handleScrollToCou = () => {
+    const element = document.getElementById('cou');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleButtonClick = () => {
+    handleScrollToCou();
+    navigate('/e-learning');
+  };
+
   return (
     <>
     <div className='px-3 lg:w-10/12 max-[450px]:w-full m-auto'>
@@ -19,7 +34,7 @@ const Elearning = () => {
       <h1 className='text-6xl max-sm:text-4xl font-extrabold pt-6'>Welcome To Social Swirl E-Learning!</h1>
       <h5 className='mt-6 leading-6'>Discover a world of knowledge and growth at Social Swirl. We have empowered over 300 students to succeed in Frontend, Backend, SEO, Human Resource, Graphic Deisgning and Social Media Marketing. Join us to unleash your potential and make a difference</h5>
       <div className='flex mt-6 max-sm:justify-center'>
-        <button className='px-5 py-2 rounded-lg bg-purple-600 text-white'>Let's get started</button>
+        <button onClick={handleButtonClick} className='px-5 py-2 rounded-lg bg-purple-600 text-white'>Let's get started</button>
          <span className='cursor-pointer ms-4 px-8 py-2 rounded-md flex items-center border border-red'>
             <h6 className='m-0 p-0'>Register</h6>
             <FaLongArrowAltRight className='ps-3' size={'25px'}/>
@@ -34,7 +49,7 @@ const Elearning = () => {
     
 
       {/* Courses */}
-      <div className='mt-32'>  
+      <div className='mt-32' id='cou'>  
       <h1 className='text-lg text-center mt-40 text-social_right'>learn</h1>
       <h1 className='text-5xl text-center max-sm:mt-0 max-sm:mb-20 ma max-sm:text-3xl font-semibold'>Our Featured Courses</h1>
       <div className='grid grid-cols-3 max-sm:grid-cols-1 mt-10 gap-14'>
