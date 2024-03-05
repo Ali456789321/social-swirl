@@ -58,7 +58,7 @@ const Nav = () => {
      <div className='hover-line'></div>
             </div>
             <div className='home px-7 ms-8 py-5'>
-            <a href='#' className="rounded-md text-sm font-medium" aria-current="page">ADMIN</a>
+            <NavLink to='/admin' className="rounded-md text-sm font-medium" aria-current="page">ADMIN</NavLink>
             <div className='hover-line'></div>
             </div>
           </div>

@@ -1,10 +1,9 @@
-import { useState, lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import './index.css'
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Register from './components/Register'
-
 
 const Home = lazy(() => import('./components/Home'))
 const Elearning = lazy(() => import('./components/Elearning'))
@@ -15,13 +14,17 @@ const About = lazy(() => import('./components/About'))
 const Remote = lazy(() => import('./components/Remote'))
 const Details = lazy(() => import('./components/Details'))
 const Apply = lazy(() => import('./components/Apply'))
+const Admin = lazy(() => import('./components/Admin'))
+const Admins = lazy(() => import('./components/Admin/Admins'))
+const Adjobs = lazy(() => import('./components/Admin/Adjobs'))
+const Adcourse = lazy(() => import('./components/Admin/Adcourse'))
 
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
@@ -77,6 +80,26 @@ function App() {
            <Route path='/register/:course' element={
             <Suspense fallback={'<h1>loading</h1>'}>
                  <Register/>
+            </Suspense>
+           }/>
+            <Route path='/admin' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Admin/>
+            </Suspense>
+           }/>
+            <Route path='/user' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Admins/>
+            </Suspense>
+           }/>
+           <Route path='/ad-jobs' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Adjobs/>
+            </Suspense>
+           }/>
+           <Route path='/ad-course' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Adcourse/>
             </Suspense>
            }/>
          </Routes>

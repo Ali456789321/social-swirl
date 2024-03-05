@@ -51,5 +51,25 @@ a:hover ~ .hover-line {
 }
 
 
+.dash_jobs {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dashboard:hover .dash_jobs {
+  opacity: 1;
+}
+
+.job_careers {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.careers:hover .job_careers {
+  opacity: 1;
+}
+
 
 
