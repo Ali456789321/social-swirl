@@ -24,11 +24,11 @@ const Adminnav = () => {
             <h1 className='border  hover:bg-social_right hover:text-white border-gray-200 py-3 ps-2 pe-14'>Add New Course</h1>
             </NavLink>
            
-            <NavLink>
+            <NavLink to="/job-list">
             <h1 className='border  hover:bg-social_right hover:text-white border-gray-200 py-3 ps-2 pe-14'>Job/Internship list</h1>
             </NavLink>
            
-            <NavLink>
+            <NavLink to="/course-list">
             <h1 className='border  hover:bg-social_right hover:text-white border-gray-200 py-3 ps-2 pe-14'>Courses List</h1>
             </NavLink>
         </div>
@@ -39,11 +39,11 @@ const Adminnav = () => {
             <h1>Careers</h1>
         </NavLink>
         <div className='job_careers border rounded-lg border-gray-300 bg-white absolute z-10'>
-            <NavLink>
+            <NavLink to="/job-table">
             <h1 className='border  hover:bg-social_right hover:text-white border-gray-200 py-2 ps-2 pe-14'>Job</h1>
             </NavLink>
            
-            <NavLink>
+            <NavLink to="/intern-table">
             <h1 className='border  hover:bg-social_right hover:text-white border-gray-200 py-2 ps-2 pe-14'>Internship</h1>
             </NavLink>
         </div>

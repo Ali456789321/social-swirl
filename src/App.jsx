@@ -18,6 +18,10 @@ const Admin = lazy(() => import('./components/Admin'))
 const Admins = lazy(() => import('./components/Admin/Admins'))
 const Adjobs = lazy(() => import('./components/Admin/Adjobs'))
 const Adcourse = lazy(() => import('./components/Admin/Adcourse'))
+const Joblist = lazy(() => import('./components/Admin/Joblist'))
+const Courselist = lazy(() => import('./components/Admin/Courselist'))
+const Jobtable = lazy(() => import('./components/Admin/Jobtable'))
+const Intern = lazy(() => import('./components/Admin/Intern'))
 
 
 
@@ -100,6 +104,26 @@ function App() {
            <Route path='/ad-course' element={
             <Suspense fallback={'<h1>loading</h1>'}>
                  <Adcourse/>
+            </Suspense>
+           }/>
+            <Route path='/job-list' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Joblist/>
+            </Suspense>
+           }/>
+           <Route path='/course-list' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Courselist/>
+            </Suspense>
+           }/>
+            <Route path='/job-table' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Jobtable/>
+            </Suspense>
+           }/>
+            <Route path='/intern-table' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Intern/>
             </Suspense>
            }/>
          </Routes>

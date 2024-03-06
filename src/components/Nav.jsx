@@ -103,7 +103,7 @@ const Nav = () => {
       <NavLink to='about' className='res'>
       <h5 className='ms-4 ps-3 rounded-md py-2 mt-4 me-5'>ABOUT US</h5>
       </NavLink>
-      <NavLink>
+      <NavLink to='admin' className='res'>
       <h5 className='ms-4 ps-3 rounded-md py-2 mt-4 me-5 mb-3'>ADMIN</h5>
       </NavLink>
     </div>
