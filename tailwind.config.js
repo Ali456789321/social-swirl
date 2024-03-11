@@ -27,6 +27,9 @@ export default {
       },
       backgroundImage: {
         hero: "url('./images/remote.jpg')"
+      },
+      height: {
+        register: "500px"
       }
     },
   },

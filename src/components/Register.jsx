@@ -21,10 +21,10 @@ const Register = () => {
 
     return (
         <>
-        <div className='pt-40 w-10/12 max-sm:w-full m-auto max-sm:px-2'>
+        <div className='pt-40 max-lg:w-11/12 w-10/12 max-sm:w-full m-auto max-sm:px-2'>
             <div className='grid grid-cols-2 max-sm:grid-cols-1 gap-24'>
                 <div className='bg-gradient-to-r socia from-social_left to-social_right rounded-3xl p-1'>
-                    <div className='bg-white max-sm:px-5 max-sm:py-5 px-16 py-12 rounded-3xl'>
+                    <div className='bg-white max-sm:px-5 max-sm:py-5 px-16 py-12 rounded-3xl h-full'>
                         <div className='flex justify-between items-center'>
                             <div className='flex gap-3 items-center'>
                                 <MdOutlinePayments size={'40px'} className='text-gray-400' />
@@ -80,21 +80,21 @@ const Register = () => {
                 </div>
                 
                 <div className='bg-gradient-to-r from-social_left to-social_right rounded-3xl p-1'>
-                <div className='bg-white rounded-3xl px-8 max-sm:pt-5 py-5'>
+                <div className='bg-white rounded-3xl px-8 max-sm:pt-5 py-5 h-full'>
                     <h1 className=''>Your Name:</h1>
-                   <input className='max-sm:w-full mt-3 outline-none bg-gray-100 py-1 ps-3 border border-gray-200 pe-64 max-sm:pe-0' type="text" />
+                   <input className='w-full outline-none bg-gray-100 border border-gray-200 py-1' type="text" />
                    <h1 className='mt-7'>Your Email:</h1>
-                   <input className='max-sm:w-full outline-none bg-gray-100 py-1 ps-3 border border-gray-200 pe-64 max-sm:pe-0' type="text" />
+                   <input className='outline-none w-full bg-gray-100 py-1 border border-gray-200' type="text" />
                    <h1 className='mt-7'>Your Address</h1>
-                   <input className='max-sm:w-full outline-none bg-gray-100 py-1 ps-3 border border-gray-200 pe-64 max-sm:pe-0' type="text" />
+                   <input className='outline-none w-full bg-gray-100 py-1 border border-gray-200' type="text" />
                    <h1 className='mt-7'>Phone Number:</h1>
-                   <input className='max-sm:w-full outline-none bg-gray-100 py-1 ps-3 border border-gray-200 pe-64 max-sm:pe-0' type="text" />
+                   <input className='outline-none w-full bg-gray-100 py-1 border border-gray-200' type="text" />
                    <h1 className='mt-7'>Your State/Province</h1>
-                   <input className='max-sm:w-full outline-none bg-gray-100 py-1 ps-3 border border-gray-200 pe-64 max-sm:pe-0' type="text" />
+                   <input className='outline-none w-full bg-gray-100 py-1 border border-gray-200' type="text" />
                    <h1 className='mt-7'>Your Zip/Postal Code</h1>
-                   <input className='max-sm:w-full outline-none bg-gray-100 py-1 ps-3 border border-gray-200 pe-64 max-sm:pe-0' type="text" />
+                   <input className='outline-none w-full bg-gray-100 py-1 border border-gray-200' type="text" />
                    <h1 className='mt-7'>Your Country:</h1>
-                   <input className='max-sm:w-full outline-none bg-gray-100 py-1 ps-3 border border-gray-200 pe-64 max-sm:pe-0' type="text" />
+                   <input className='outline-none w-full bg-gray-100 py-1 border border-gray-200' type="text" />
                    <div className='text-center pt-7'>
                    <button className='rounded-xl text-white bg-gradient-to-r from-social_left to-social_right px-5 py-3'>Register Now</button>
                    </div>  

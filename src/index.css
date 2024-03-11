@@ -52,23 +52,30 @@ a:hover ~ .hover-line {
 
 
 .dash_jobs {
-  display: block;
-  opacity: 0;
+  display: none;
   transition: opacity 0.2s ease-in-out;
 }
 
 .dashboard:hover .dash_jobs {
-  opacity: 1;
+  display: block;
 }
 
 .job_careers {
-  display: block;
-  opacity: 0;
+  display: none;
   transition: opacity 0.4s ease-in-out;
 }
 
 .careers:hover .job_careers {
+  display: block;
   opacity: 1;
+}
+
+.profile-hover {
+  display: none;
+}
+
+.profile:hover .profile-hover {
+  display: block;
 }
 
 

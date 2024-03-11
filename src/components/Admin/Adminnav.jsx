@@ -48,7 +48,14 @@ const Adminnav = () => {
             </NavLink>
         </div>
         </div>
+        <div className='profile'>
         <img className='w-11 h-11 rounded-full' src={person} alt="" />
+        <div className='profile-hover border rounded-lg border-gray-300 bg-white absolute z-10'>
+            <NavLink to="/e-learning">
+            <h1 className='border  hover:bg-social_right hover:text-white border-gray-200 py-2 ps-2 pe-14'>Log Out</h1>
+            </NavLink>
+        </div>
+        </div>
      </div>
     </div>
     </>
