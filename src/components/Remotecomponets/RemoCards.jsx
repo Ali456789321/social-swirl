@@ -1,13 +1,19 @@
-import React from 'react'
-import img1 from "../images/frontjob.jpg"
-// import img2 from "../images/backend.jpg"
+import React, { useEffect } from 'react'
 import { IoLocationOutline } from "react-icons/io5";
-import jobs from '../data/jobs';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { showUser } from '../../features/slice';
 
 const RemoCards = () => {
+
+    const { jobs, loading } = useSelector((state) => state.count)
+    const dispatch = useDispatch()
     
     const navigate = useNavigate()
+
+    useEffect(() => {
+        dispatch(showUser())
+    }, [])
 
     return (
         <>
@@ -44,8 +50,11 @@ const RemoCards = () => {
                         </>
                     ))
                 }
-
+                
             </div>
+            <div className='text-center'>
+                    <button onClick={() => navigate('/all-jobs')} className='py-3 px-5 rounded-md mt-10 text-white bg-gradient-to-r from-social_left to-social_right'>Read More</button>
+                </div>
         </>
     )
 }

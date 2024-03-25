@@ -1,14 +1,14 @@
 import React from 'react'
 import img2 from "../images/pexels-fauxels-3183150.jpg"
 import img3 from "../images/sa.png"
-import Carousel from './Carousel'
+import Carousel from './Repeatedcomponets/Carousel'
 
 const About = () => {
   return (
     <>
     <div className='pt-40'>
 
-    <div className='bg-hero  bg-center bg-no-repeat bg-cover h-96'>
+    <div className='bg-hero bg-center bg-no-repeat bg-cover h-96'>
         <div className='h-full bg-white_shade flex items-center justify-center'>
         <h1 className='text-4xl font-bold'>About The Company</h1>
         </div>

@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react'
 import './index.css'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
-import Footer from './components/Footer'
+import Footer from './components/Repeatedcomponets/Footer'
 import Register from './components/Register'
 
 const Home = lazy(() => import('./components/Home'))
@@ -12,7 +12,7 @@ const Lectures = lazy(() => import('./components/Lectures'))
 const Buisness = lazy(() => import('./components/Buisness'))
 const About = lazy(() => import('./components/About'))
 const Remote = lazy(() => import('./components/Remote'))
-const Details = lazy(() => import('./components/Details'))
+const Details = lazy(() => import('./components/Remotecomponets/Details'))
 const Apply = lazy(() => import('./components/Apply'))
 const Admin = lazy(() => import('./components/Admin'))
 const Admins = lazy(() => import('./components/Admin/Admins'))
@@ -22,9 +22,11 @@ const Joblist = lazy(() => import('./components/Admin/Joblist'))
 const Courselist = lazy(() => import('./components/Admin/Courselist'))
 const Jobtable = lazy(() => import('./components/Admin/Jobtable'))
 const Intern = lazy(() => import('./components/Admin/Intern'))
-
-
-
+const Contact = lazy(() => import('./components/Contact/Contact'))
+const AllLectures = lazy(() => import('./components/Alllectures'))
+const Alljobs = lazy(() => import('./components/Remotecomponets/Alljobs'))
+const Courseupdate = lazy(() => import('./components/Admin/Courseupdate'))
+const Jobupdate = lazy(() => import('./components/Admin/Jobupdate'))
 
 
 function App() {
@@ -44,6 +46,11 @@ function App() {
            <Route path='/e-learning' element={
             <Suspense fallback={'<h1>loading</h1>'}>
                  <Elearning/>
+            </Suspense>
+           }/>
+            <Route path='/all-lectures' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <AllLectures/>
             </Suspense>
            }/>
            <Route path='/selectedCourse/:id' element={
@@ -74,6 +81,11 @@ function App() {
            <Route path='/remote' element={
             <Suspense fallback={'<h1>loading</h1>'}>
                  <Remote/>
+            </Suspense>
+           }/>
+           <Route path='/all-jobs' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Alljobs/>
             </Suspense>
            }/>
            <Route path='/remote/:id' element={
@@ -124,6 +136,21 @@ function App() {
             <Route path='/intern-table' element={
             <Suspense fallback={'<h1>loading</h1>'}>
                  <Intern/>
+            </Suspense>
+           }/>
+            <Route path='/intern-table' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Contact/>
+            </Suspense>
+           }/>
+            <Route path='/courseupdate/:name' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Courseupdate/>
+            </Suspense>
+           }/>
+           <Route path='/jobupdate/:name' element={
+            <Suspense fallback={'<h1>loading</h1>'}>
+                 <Jobupdate/>
             </Suspense>
            }/>
          </Routes>

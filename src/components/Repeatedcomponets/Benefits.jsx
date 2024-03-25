@@ -1,7 +1,7 @@
 import React from 'react'
-import gif1 from "../images/gif1.jpg"
-import gif2 from "../images/gif2.jpg"
-import gif3 from "../images/gif3.jpg"
+import gif1 from "../../images/gif1.jpg"
+import gif2 from "../../images/gif2.jpg"
+import gif3 from "../../images/gif3.jpg"
 
 const Benefits = () => {
   return (

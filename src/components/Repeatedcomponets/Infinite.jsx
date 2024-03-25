@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../data/logo'
+import logo from '../../data/logo'
 
 const Infinite = () => {
   return (

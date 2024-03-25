@@ -1,8 +1,8 @@
 import React, { lazy } from 'react'
 import img1 from "../images/remote.jpg"
-import Carousel from './Carousel'
+import Carousel from './Repeatedcomponets/Carousel'
 
-const RemoCards = lazy(() => import('./RemoCards'))
+const RemoCards = lazy(() => import('./Remotecomponets/RemoCards'))
 
 
 

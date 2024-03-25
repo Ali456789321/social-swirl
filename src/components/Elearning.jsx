@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import img2 from "../images/person.jpg"
 import img3 from "../images/events.jpg"
-import { MdOutlineArrowOutward } from "react-icons/md";
-import card from '../data/card';
 import { Link, useNavigate } from 'react-router-dom';
-import Student from './Students';
-import Benefits from './Benefits';
+import Student from './Repeatedcomponets/Students';
+import Benefits from './Repeatedcomponets/Benefits';
+import { useDispatch, useSelector } from 'react-redux';
+import { showCourse } from '../features/slice';
 
 
 const Elearning = () => {
+  const {courses,loading} = useSelector(state => state.count)
+  const dispatch = useDispatch()
 
   const navigate = useNavigate()
+
+  useEffect(() => {
+    dispatch(showCourse())
+ },[])
   
   const handleScrollToCou = () => {
     const element = document.getElementById('cou');
@@ -53,34 +59,23 @@ const Elearning = () => {
       <h1 className='text-lg text-center mt-40 text-social_right'>learn</h1>
       <h1 className='text-5xl text-center max-sm:mt-0 max-sm:mb-20 ma max-sm:text-3xl font-semibold'>Our Featured Courses</h1>
       <div className='grid grid-cols-3 max-sm:grid-cols-1 mt-10 gap-14'>
-       
+
       {
-        card.map((item) => (
-          <Link to={`/selectedCourse/${item.id}`}>
+        loading ? (
+          <h1>loading</h1>
+        ) : courses.slice(0,3).map((item) => (
+          <Link to={`/selectedCourse/${item.id}`} key={item.id}>
              <div key={item.id} class="bg-white max-w-sm rounded overflow-hidden shadow-lg max-sm:m-auto">
-          <img className="w-full h-60" src={item.img} alt="Sunset in the mountains"/>
-           <div className='flex pt-8 ps-3'>
-               <img src={img2} className='w-11 h-11  rounded-full' alt="" />
-               <div className='ps-3'>
-                 <h1 className='font-medium'>{item.name}</h1>
-                 <h5 className='opacity-80 font-thin'>{item.senior}</h5>
-               </div>
-           </div>
-           <div className='pt-5 flex items-center ps-5'>
-           <h1 className='font-medium'>{item.course}</h1>
-           <MdOutlineArrowOutward className='ps-3' size={"30px"}/>
-           </div>
-         <h6 className='ps-5 font-thin'>Duration 1 to 3 months</h6>
-          <div className="px-6 pt-7 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#online</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">certificate</span>
-          </div>
+          <img className="w-full h-56" src={item.img} alt="Sunset in the mountains" loading='lazy'/>
         </div>
           </Link>   
         ))
       }
       </div>
-         
+      <div className='text-center'>
+       <button onClick={() => navigate('/all-lectures')} className='py-3 px-5 rounded-md mt-10 text-white bg-gradient-to-r from-social_left to-social_right'>Read More</button>
+      </div>
+     
        <Student/>
        <Benefits/>
 

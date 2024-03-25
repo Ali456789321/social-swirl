@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import img2 from "../images/person.jpg"
-import caro from '../data/caro';
+import caro from '../../data/caro';
 
 // Import Swiper styles
 import 'swiper/css';

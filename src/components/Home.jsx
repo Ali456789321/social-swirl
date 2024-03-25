@@ -3,10 +3,10 @@ import img1 from '../images/sa.png'
 import img2 from "../images/pexels-fauxels-3183150.jpg"
 import img3 from "../images/events.jpg"
 import { useNavigate } from 'react-router-dom'
-import Carousel from './Carousel'
-import Reviews from './Reviews'
-import Opening from './Opening'
-import Infinite from './Infinite'
+import Carousel from './Repeatedcomponets/Carousel'
+import Reviews from './Repeatedcomponets/Reviews'
+import Opening from './Repeatedcomponets/Opening'
+import Infinite from './Repeatedcomponets/Infinite'
 
 const Home = () => {
 

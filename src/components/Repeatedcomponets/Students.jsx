@@ -1,8 +1,6 @@
 import React from 'react'
-// import review from "../images/review.jpg"
-import vector from "../images/vector.jpg"
-import student from '../data/students'
-import student2 from '../data/students2'
+import student from '../../data/students'
+import student2 from '../../data/students2'
 
 const Student = () => {
   return (

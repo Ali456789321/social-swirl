@@ -1,7 +1,7 @@
 import React, { lazy } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img2 from "../images/sa.png"
-import review from '../data/review';
+import img2 from "../../images/sa.png"
+import review from '../../data/review';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';

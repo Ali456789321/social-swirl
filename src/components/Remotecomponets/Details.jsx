@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import img1 from "../images/backend.jpg"
-import jobs from '../data/jobs'
+import jobs from '../../data/jobs'
 import { useParams } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { showUser } from '../../features/slice'
 
 const Details = () => {
-  const [job, setJob]= useState()  
+  const [job, setJob]= useState() 
+  const {jobs} = useSelector(state => state.count) 
   const {id} = useParams()
+  const dispatch = useDispatch()
   
   useEffect(() => {
-    if(id) {
-        const single = jobs.filter(ele => ele.id === +id)
+    dispatch(showUser())
+  },[])
+  
+  useEffect(() => {
+        const single = jobs.filter(ele => ele.id === id)
         setJob(single[0])
-    }
-  }, [])
+  }, [jobs])
 
   console.log(job);
  
@@ -21,20 +26,20 @@ const Details = () => {
     <>
     
      <div className='w-10/12 m-auto pt-40'>
-        <h1 className='text-6xl max-sm:text-4xl text-center font-normal mt-20'>{job && job.job}</h1>
+        <h1 className='text-6xl max-sm:text-4xl text-center font-normal mt-20'>{job && job.title}</h1>
         <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-10 mt-20">
-          {
-            job && (
+        {
+            job ? (
               <>
                      <div>
         <h2 className='font-medium '>
-          {job.details}
+          {job.description}
         </h2>
           {/* RESPONSIBILITIES */}
         <div className='mt-10'>
             <h1 className='text-lg font-bold'>#Responsibilities</h1>
             {
-  job.responsibilities.map((ele) => (
+  job.skills.map((ele) => (
     <div className='flex'>
       <span className='font-extrabold text-xl'>.</span>
       <h2 className='text-base mt-2 ps-2'>{ele}</h2>
@@ -60,18 +65,25 @@ const Details = () => {
 
         </div>
          <div>
-            <img className='h-80 w-10/12 max-sm:w-full m-auto rounded-3xl mt-10' src={job.img} alt="" />
-            <div className='rounded-3xl max-sm:bg-transparent bg-white p-3 text-center w-10/12 m-auto mt-5'>
+            <img className='h-80 w-10/12 m-auto rounded-3xl mt-10' src={job.img} alt="" />
+            <div className='rounded-3xl bg-white p-3 text-center w-10/12 m-auto mt-5'>
                 <button className='py-5 px-8 rounded-xl text-white bg-gradient-to-r from-social_left to-social_right'>Apply Now</button>
             </div>
          </div>
               </>
-            ) 
+            ) : <h1>Waiting for jobs</h1>
           }
         </div>
-       
-
      </div>
+     <div className='bg-gradient-to-r from-social_left to-social_right flex items-center justify-center gap-10 max-sm:flex-col py-20 max-sm:mt-20 mt-40'>
+    <div className='text-white max-sm:text-center'>
+    <h1 className='text-3xl'>
+      Start a Project with us Today
+    </h1>
+    <h2 className='text-lg'>Call us now to schedule as online appointment and get your project successfully completed</h2>
+    </div>
+    <button className='bg-gradient-to-r from-social_left to-social_right text-white py-3 px-7 rounded-lg'>Get Started</button>
+  </div>
     </>
   )
 }
